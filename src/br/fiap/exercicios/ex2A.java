@@ -17,7 +17,7 @@ public class ex2A {
         bd[4] = new Registro("Soldador",201,"ABC",48.99);
         bd[5] = new Registro("Tesoura",732,"W2M",23.80);
 
-        Registro encontrados[] = new Registro[6];
+        Registro[] encontrados = new Registro[6];
 
         String fornecedor;
         System.out.print("Informe o nome do fornecedor:");
@@ -40,7 +40,7 @@ public class ex2A {
 
     }
 
-    public static int buscaSequencialExaustiva(Registro bd[], String chave, Registro encontrados[]) {
+    public static int buscaSequencialExaustiva(Registro[] bd, String chave, Registro[] encontrados) {
         int ne = 0;
         int num = bd.length;
         for (int i = 0; i < num; i++) {

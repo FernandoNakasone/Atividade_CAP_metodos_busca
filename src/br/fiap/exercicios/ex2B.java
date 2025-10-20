@@ -26,7 +26,7 @@ public class ex2B {
         System.out.println(bd[posicao]);
     }
 
-    public static int buscaSequencial(Registro baseDados[], int chaveproc) {
+    public static int buscaSequencial(Registro[] baseDados, int chaveproc) {
         int pos = -1;
         for (int i = 0; i< baseDados.length && pos == -1; i++)
             if((baseDados[i].getCodigo() == chaveproc))
